@@ -4,16 +4,18 @@
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
 
-  --color-primary: oklch(0.65 0.15 210);
-  --color-accent: oklch(0.72 0.14 200);
-  --color-ink: #0F172A;
-  --color-mist: #F8FAFC;
+  --color-primary: #0891B2;
+  --color-accent:  #06B6D4;
+  --color-ink:     #0F172A;
+  --color-mist:    #F8FAFC;
 }
 
 html { scroll-behavior: smooth; }
-body { @apply bg-white text-ink antialiased; }
 
-/* v4: buttons default to cursor:default */
+body {
+  @apply bg-white text-ink antialiased font-sans;
+}
+
 @layer base {
   button:not(:disabled) { cursor: pointer; }
 }
