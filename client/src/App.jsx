@@ -1,12 +1,23 @@
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Trust from './components/Trust';
+import Services from './components/Services';
+import About from './components/About';
+import Testimonials from './components/Testimonials';
+import BookingForm from './components/BookingForm';
+import Footer from './components/Footer';
 
-
-function App() {
-
+export default function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Trust />
+        <Services />
+        <About />
+        <Testimonials />
+      </main>
+    </>
+  );
 }
-
-export default App
